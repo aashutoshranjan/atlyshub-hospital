@@ -45,7 +45,7 @@ export function Navbar() {
           </span>
         </a>
 
-        <ul className="hidden items-center gap-6 xl:flex">
+        <ul className="hidden items-center gap-5 2xl:flex">
           {links.map((l) => (
             <li key={l.label}>
               <a
@@ -59,7 +59,7 @@ export function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <Button variant="outlineNavy" size="default" asChild>
+          <Button variant="outlineNavy" size="default" className="hidden xl:inline-flex" asChild>
             <a href="#contact">Schedule Consultation</a>
           </Button>
           <Button variant="hero" size="default" asChild>
