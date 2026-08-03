@@ -6,14 +6,15 @@ import { cn } from "@/lib/utils";
 const links = [
   { label: "Home", href: "#home" },
   { label: "About Us", href: "#about" },
-  { label: "Employers", href: "#employers" },
-  { label: "Candidates", href: "#candidates" },
-  { label: "Healthcare Staffing", href: "#services" },
+  { label: "Services", href: "#services" },
   { label: "Specialties", href: "#specialties" },
   { label: "Industries", href: "#industries" },
+  { label: "Employers", href: "#employers" },
+  { label: "Find Jobs", href: "#candidates" },
   { label: "Why Choose Us", href: "#why" },
   { label: "Contact", href: "#contact" },
 ];
+
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -60,12 +61,13 @@ export function Navbar() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <Button variant="outlineNavy" size="default" className="hidden xl:inline-flex" asChild>
-            <a href="#contact">Schedule Consultation</a>
+            <a href="#candidates">Find Jobs</a>
           </Button>
           <Button variant="hero" size="default" asChild>
-            <a href="#contact">Hire Healthcare Professionals</a>
+            <a href="#contact">Hire Talent</a>
           </Button>
         </div>
+
 
         <button
           aria-label="Toggle menu"
@@ -94,15 +96,16 @@ export function Navbar() {
           <div className="mt-4 grid gap-2">
             <Button variant="hero" size="xl" asChild>
               <a href="#contact" onClick={() => setOpen(false)}>
-                Hire Healthcare Professionals
+                Hire Talent
               </a>
             </Button>
             <Button variant="outlineNavy" size="xl" asChild>
-              <a href="#contact" onClick={() => setOpen(false)}>
-                Schedule Consultation
+              <a href="#candidates" onClick={() => setOpen(false)}>
+                Find Jobs
               </a>
             </Button>
           </div>
+
         </div>
       )}
     </header>

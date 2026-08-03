@@ -28,14 +28,15 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24">
-      <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+    <section id="contact" className="py-28 lg:py-32">
+      <div className="mx-auto grid max-w-7xl gap-14 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
         <div>
           <span className="text-xs font-semibold uppercase tracking-[0.18em] text-medical">
             Contact
           </span>
-          <h2 className="mt-3 font-display text-3xl font-extrabold text-primary sm:text-4xl">
-            Let's build your healthcare team
+          <h2 className="mt-4 font-display text-3xl font-extrabold text-primary sm:text-4xl">
+            Let's Build Your Healthcare Team
+
           </h2>
           <p className="mt-4 max-w-md text-base leading-relaxed text-muted-foreground">
             Share your hiring requirement and a dedicated consultant will respond with a tailored
@@ -63,8 +64,9 @@ export function Contact() {
         <form onSubmit={onSubmit} className="surface-card p-8 lg:p-10">
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="grid gap-2">
-              <Label htmlFor="hospital">Hospital Name</Label>
-              <Input id="hospital" name="hospital" required placeholder="Organisation name" />
+              <Label htmlFor="hospital">Organization Name</Label>
+              <Input id="hospital" name="hospital" required placeholder="Organization name" />
+
             </div>
             <div className="grid gap-2">
               <Label htmlFor="person">Contact Person</Label>
@@ -129,10 +131,11 @@ export function Footer() {
               <span className="font-display text-lg font-extrabold">MedTalent Global</span>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-primary-foreground/70">
-              A premium international healthcare recruitment and executive search partner, helping
-              hospitals and healthcare organizations across the GCC hire qualified doctors, nurses,
-              allied healthcare professionals and healthcare leaders.
+              An international healthcare staffing and recruitment company connecting hospitals,
+              medical centres, clinics and healthcare groups across the GCC with qualified doctors,
+              nurses, allied healthcare professionals and healthcare executives.
             </p>
+
             <div className="mt-6 flex gap-3">
               {[Linkedin, Facebook, Instagram].map((Icon, i) => (
                 <a
@@ -161,14 +164,15 @@ export function Footer() {
           <FooterCol
             title="Services"
             items={[
-              ["Permanent Recruitment", "#services"],
+              ["Healthcare Recruitment", "#services"],
+              ["Permanent Staffing", "#services"],
               ["Executive Search", "#services"],
-              ["Healthcare Staffing", "#services"],
+              ["Contract Staffing", "#services"],
               ["International Recruitment", "#services"],
-              ["Specialties", "#specialties"],
-              ["Industries", "#industries"],
+              ["Workforce Solutions", "#services"],
             ]}
           />
+
           <div>
             <h3 className="font-display text-sm font-bold uppercase tracking-wider">Countries</h3>
             <ul className="mt-4 grid gap-2.5 text-sm text-primary-foreground/70">
