@@ -1,36 +1,37 @@
 import {
   Award,
+  Activity,
+  Ambulance,
+  Baby,
+  Bone,
+  Brain,
   Building2,
+  CalendarCheck,
   CheckCircle2,
+  ClipboardList,
   Clock,
+  Droplets,
+  Eye,
   FlaskConical,
   HeartPulse,
   Home,
-  Landmark,
+  Hospital,
   Microscope,
-  Quote,
-  Search,
-  Stethoscope,
-  Users,
-  Globe2,
   Pill,
-  Activity,
-  Baby,
-  Briefcase,
-  UserCheck,
-  FileCheck2,
-  CalendarCheck,
-  Handshake,
-  BadgeCheck,
-  LifeBuoy,
+  Quote,
   Scan,
-  ScrollText,
-  Network,
   ShieldCheck,
-  Zap,
+  Stethoscope,
+  Syringe,
+  UserCheck,
+  Users,
   UsersRound,
-  HeartHandshake,
+  Wind,
+  BedDouble,
+  BadgeCheck,
   Headphones,
+  HeartHandshake,
+  MapPin,
 } from "lucide-react";
 import { Reveal, Counter } from "@/components/site/Reveal";
 
@@ -57,13 +58,13 @@ function SectionHeading({
 }
 
 const trusted = [
-  { label: "Hospitals", icon: Building2 },
-  { label: "Clinics", icon: Stethoscope },
-  { label: "Medical Centres", icon: HeartPulse },
-  { label: "Diagnostic Labs", icon: Microscope },
-  { label: "IVF Centres", icon: Baby },
-  { label: "Pharmaceutical Companies", icon: Pill },
-  { label: "Healthcare Groups", icon: Landmark },
+  { label: "24x7 Emergency", icon: Ambulance },
+  { label: "Multispeciality ICU", icon: HeartPulse },
+  { label: "Modular OTs", icon: Syringe },
+  { label: "Advanced Diagnostics", icon: Microscope },
+  { label: "In-house Pharmacy", icon: Pill },
+  { label: "Cashless Insurance", icon: ShieldCheck },
+  { label: "28+ Branches", icon: MapPin },
 ];
 
 export function TrustSection() {
@@ -71,7 +72,7 @@ export function TrustSection() {
     <section className="border-y border-border bg-secondary/40 py-16">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <p className="text-center text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
-          Trusted by healthcare organizations across the GCC
+          Patient care facilities available across our hospital network in India
         </p>
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-7">
           {trusted.map(({ label, icon: Icon }, i) => (
@@ -89,15 +90,15 @@ export function TrustSection() {
 }
 
 const reasons = [
-  { t: "Specialized Healthcare Recruitment", icon: Stethoscope },
-  { t: "GCC Market Expertise", icon: Globe2 },
-  { t: "International Talent Network", icon: Network },
-  { t: "Pre-Screened Professionals", icon: ShieldCheck },
-  { t: "Dedicated Recruitment Consultants", icon: UsersRound },
-  { t: "Faster Hiring Process", icon: Zap },
-  { t: "Ethical Recruitment Practices", icon: BadgeCheck },
-  { t: "Long-Term Recruitment Partnership", icon: HeartHandshake },
-  { t: "Personalized Client Support", icon: Headphones },
+  { t: "Experienced Consultant Doctors", icon: Stethoscope },
+  { t: "28+ Hospital Branches Across India", icon: MapPin },
+  { t: "24x7 Emergency & Ambulance Services", icon: Ambulance },
+  { t: "Advanced ICU & Critical Care Units", icon: HeartPulse },
+  { t: "Modern Diagnostics & Imaging", icon: Scan },
+  { t: "Cashless Insurance & TPA Support", icon: ShieldCheck },
+  { t: "Transparent Treatment Guidance", icon: BadgeCheck },
+  { t: "Compassionate Nursing Care", icon: HeartHandshake },
+  { t: "Dedicated Patient Support Desk", icon: Headphones },
 ];
 
 export function WhyUs() {
@@ -106,8 +107,8 @@ export function WhyUs() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
           eyebrow="Why Choose Us"
-          title="Why healthcare leaders choose MedTalent Global"
-          subtitle="A specialist recruitment partner built around quality, speed, ethics and long-term partnership."
+          title="Why patients across India choose Atlyshub Hospital"
+          subtitle="A multispeciality hospital network built around clinical excellence, modern technology and compassionate care."
         />
         <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {reasons.map(({ t, icon: Icon }, i) => (
@@ -128,34 +129,34 @@ export function WhyUs() {
 
 const services = [
   {
-    icon: Search,
-    title: "Healthcare Recruitment",
-    desc: "End-to-end hiring for clinical and non-clinical roles across hospitals, clinics and healthcare groups.",
+    icon: Ambulance,
+    title: "24x7 Emergency & Trauma Care",
+    desc: "Round-the-clock casualty, trauma and advanced life support ambulance services at every branch.",
   },
   {
-    icon: Briefcase,
-    title: "Permanent Staffing",
-    desc: "Long-term hires for doctors, nurses, allied healthcare and hospital administration teams.",
+    icon: HeartPulse,
+    title: "Intensive & Critical Care",
+    desc: "Multidisciplinary ICU, HDU, NICU and PICU units monitored by intensivists around the clock.",
   },
   {
-    icon: Award,
-    title: "Executive Search",
-    desc: "Confidential leadership mandates for medical directors, hospital CEOs and department heads.",
+    icon: Syringe,
+    title: "Surgery & Modular OTs",
+    desc: "Laparoscopic, minimally invasive and open surgeries in HEPA-filtered modular operation theatres.",
   },
   {
-    icon: CalendarCheck,
-    title: "Contract Staffing",
-    desc: "Locum, temporary and project-based staffing to cover peaks, leave and new department launches.",
+    icon: Scan,
+    title: "Diagnostics & Imaging",
+    desc: "Digital X-ray, ultrasound, CT, MRI, echo and full-spectrum pathology under one roof.",
   },
   {
-    icon: Globe2,
-    title: "International Recruitment",
-    desc: "Cross-border sourcing with credential verification guidance and relocation coordination.",
+    icon: ClipboardList,
+    title: "Health Check-up Packages",
+    desc: "Preventive master health checks for individuals, families, seniors and corporate teams.",
   },
   {
-    icon: Users,
-    title: "Healthcare Workforce Solutions",
-    desc: "Workforce planning, volume hiring and department build-outs with a dedicated consultant.",
+    icon: Home,
+    title: "Home Care & Teleconsultation",
+    desc: "Follow-up video consultations, home nursing, physiotherapy and sample collection at home.",
   },
 ];
 
@@ -164,9 +165,9 @@ export function Services() {
     <section id="services" className="bg-secondary/30 py-28 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          eyebrow="Services"
-          title="End-to-end healthcare staffing solutions"
-          subtitle="From a single critical hire to a full department build-out across the Gulf region."
+          eyebrow="Hospital Services"
+          title="Complete hospital care under one roof"
+          subtitle="From emergency admission to surgery, recovery and follow-up — supported by modern medical infrastructure."
         />
         <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map(({ icon: Icon, title, desc }, i) => (
@@ -187,15 +188,18 @@ export function Services() {
 }
 
 const specialties = [
-  { title: "Doctors", icon: Stethoscope, desc: "Consultants, specialists, surgeons and general physicians." },
-  { title: "Nurses", icon: HeartPulse, desc: "ICU, NICU, OT, ER, dialysis and cath lab nursing teams." },
-  { title: "Allied Healthcare", icon: Activity, desc: "Therapists, technicians and clinical support professionals." },
-  { title: "Laboratory Professionals", icon: FlaskConical, desc: "Lab technologists, microbiologists and pathology staff." },
-  { title: "Radiology", icon: Scan, desc: "Radiographers, sonographers and imaging specialists." },
-  { title: "Pharmacy", icon: Pill, desc: "Clinical, hospital and retail pharmacy professionals." },
-  { title: "Rehabilitation", icon: LifeBuoy, desc: "Physiotherapy, occupational and speech therapy talent." },
-  { title: "Hospital Administration", icon: ScrollText, desc: "Operations, HR, billing, coding and front-office teams." },
-  { title: "Healthcare Executives", icon: Award, desc: "CEOs, medical directors and senior leadership hires." },
+  { title: "Cardiology & Cardiac Surgery", icon: HeartPulse, desc: "Angiography, angioplasty, bypass surgery and heart failure care." },
+  { title: "Neurology & Neurosurgery", icon: Brain, desc: "Stroke care, epilepsy, spine and brain surgery services." },
+  { title: "Orthopaedics & Joint Replacement", icon: Bone, desc: "Knee and hip replacement, arthroscopy and trauma surgery." },
+  { title: "Oncology", icon: Activity, desc: "Medical, surgical and day-care chemotherapy services." },
+  { title: "Gastroenterology", icon: Stethoscope, desc: "Endoscopy, liver care and laparoscopic GI surgery." },
+  { title: "Nephrology & Dialysis", icon: Droplets, desc: "Kidney care with a dedicated 24x7 dialysis unit." },
+  { title: "Obstetrics & Gynaecology", icon: Baby, desc: "Maternity care, high-risk pregnancy and birthing suites." },
+  { title: "Paediatrics & Neonatology", icon: Baby, desc: "Child health, vaccinations and Level III NICU care." },
+  { title: "Pulmonology", icon: Wind, desc: "Asthma, COPD, sleep studies and bronchoscopy." },
+  { title: "Ophthalmology", icon: Eye, desc: "Cataract, retina and refractive eye surgery." },
+  { title: "General & Laparoscopic Surgery", icon: Syringe, desc: "Hernia, gallbladder, appendix and daycare procedures." },
+  { title: "Diagnostics & Pathology", icon: FlaskConical, desc: "NABL-standard lab testing and radiology reporting." },
 ];
 
 export function Specialties() {
@@ -203,9 +207,9 @@ export function Specialties() {
     <section id="specialties" className="py-28 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          eyebrow="Specialties"
-          title="Specialist talent across every clinical discipline"
-          subtitle="We recruit across clinical, diagnostic, therapeutic and leadership functions."
+          eyebrow="Departments"
+          title="30+ specialities, one trusted hospital"
+          subtitle="Consultant-led departments supported by intensive care, diagnostics and modern surgical facilities."
         />
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {specialties.map(({ title, icon: Icon, desc }, i) => (
@@ -225,29 +229,29 @@ export function Specialties() {
   );
 }
 
-const industries = [
-  { label: "Hospitals", icon: Building2 },
-  { label: "Medical Centres", icon: HeartPulse },
-  { label: "Clinics", icon: Stethoscope },
-  { label: "Diagnostic Laboratories", icon: Microscope },
-  { label: "Home Healthcare", icon: Home },
-  { label: "Rehabilitation Centres", icon: Activity },
-  { label: "IVF Centres", icon: Baby },
-  { label: "Pharmaceutical Companies", icon: Pill },
-  { label: "Government Healthcare", icon: Landmark },
-  { label: "Healthcare Groups", icon: Network },
+const facilities = [
+  { label: "Emergency & Casualty", icon: Ambulance },
+  { label: "Intensive Care Units", icon: HeartPulse },
+  { label: "Modular Operation Theatres", icon: Syringe },
+  { label: "Inpatient Rooms & Suites", icon: BedDouble },
+  { label: "Radiology & Imaging", icon: Scan },
+  { label: "Pathology Laboratory", icon: Microscope },
+  { label: "Dialysis Unit", icon: Droplets },
+  { label: "Blood Bank Support", icon: Droplets },
+  { label: "Physiotherapy & Rehab", icon: Activity },
+  { label: "24x7 Pharmacy", icon: Pill },
 ];
 
 export function Industries() {
   return (
-    <section id="industries" className="bg-secondary/30 py-28 lg:py-32">
+    <section id="facilities" className="bg-secondary/30 py-28 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          eyebrow="Industries We Serve"
-          title="Partnering across the healthcare ecosystem"
+          eyebrow="Hospital Facilities"
+          title="Infrastructure built for safe, modern treatment"
         />
         <div className="mt-16 grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-5">
-          {industries.map(({ label, icon: Icon }, i) => (
+          {facilities.map(({ label, icon: Icon }, i) => (
             <Reveal key={label} delay={(i % 5) * 70}>
               <div className="surface-card flex h-full flex-col items-center gap-3 p-6 text-center transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[var(--shadow-elevated)]">
                 <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-accent/10 text-accent">
@@ -264,23 +268,23 @@ export function Industries() {
 }
 
 const steps = [
-  { title: "Requirement Discussion", icon: Search },
-  { title: "Candidate Sourcing", icon: Users },
-  { title: "Screening & Verification", icon: FileCheck2 },
-  { title: "Interview Coordination", icon: CalendarCheck },
-  { title: "Offer Management", icon: Handshake },
-  { title: "Joining Support", icon: BadgeCheck },
-  { title: "Post Placement Follow-up", icon: LifeBuoy },
+  { title: "Book Appointment", icon: CalendarCheck },
+  { title: "Doctor Consultation", icon: Stethoscope },
+  { title: "Diagnostics & Reports", icon: Microscope },
+  { title: "Treatment Plan", icon: ClipboardList },
+  { title: "Admission or Surgery", icon: Hospital },
+  { title: "Recovery & Nursing Care", icon: BedDouble },
+  { title: "Follow-up & Home Care", icon: Home },
 ];
 
 export function Process() {
   return (
-    <section id="employers" className="py-28 lg:py-32">
+    <section id="patients" className="py-28 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          eyebrow="Recruitment Process"
-          title="A transparent, structured hiring journey"
-          subtitle="Built for employers who need clinical quality, compliance and speed at the same time."
+          eyebrow="Patient Journey"
+          title="Simple, guided care from first visit to recovery"
+          subtitle="Every patient is supported by a care coordinator through consultation, treatment and follow-up."
         />
 
         <div className="relative mt-16 overflow-x-auto pb-4">
@@ -320,10 +324,10 @@ export function Process() {
 }
 
 const stats = [
-  { value: 5000, suffix: "+", label: "Healthcare Professionals" },
-  { value: 120, suffix: "+", label: "Healthcare Organizations Served" },
-  { value: 6, suffix: "", label: "GCC Countries" },
-  { value: 1500, suffix: "+", label: "Successful Placements" },
+  { value: 28, suffix: "+", label: "Hospital Branches in India" },
+  { value: 30, suffix: "+", label: "Medical Specialities" },
+  { value: 400, suffix: "+", label: "Doctors & Consultants" },
+  { value: 500000, suffix: "+", label: "Patients Treated" },
 ];
 
 export function Stats() {
@@ -349,25 +353,26 @@ export function About() {
       <div className="mx-auto grid max-w-7xl items-start gap-16 px-5 lg:grid-cols-2 lg:px-8">
         <Reveal>
           <SectionHeading
-            eyebrow="About Us"
+            eyebrow="About the Hospital"
             center={false}
-            title="An international healthcare staffing and recruitment company"
-            subtitle="MedTalent Global is an international healthcare staffing and recruitment company connecting healthcare organizations with qualified medical professionals across the Gulf region."
+            title="A multispeciality hospital network headquartered in Bangalore"
+            subtitle="Atlyshub Multispeciality Hospital is headquartered in Bangalore, Karnataka, and operates more than 28 hospital branches across India, delivering emergency, surgical, critical and preventive care."
           />
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            We specialize in recruiting doctors, nurses, allied healthcare professionals, healthcare
-            executives, and hospital administration staff.
+            Our consultants work across cardiology, neurosciences, orthopaedics, oncology, mother
+            and child care, nephrology and more, supported by modern intensive care units, modular
+            operation theatres and advanced diagnostic services.
           </p>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            Our mission is to build long-term recruitment partnerships by delivering quality talent,
-            faster hiring, and exceptional client service.
+            Our mission is simple: give every patient safe, ethical and affordable treatment close
+            to home, with the same clinical standard at every branch.
           </p>
           <div className="mt-10 grid gap-5 sm:grid-cols-2">
             {[
-              { icon: UserCheck, t: "Quality first", d: "Every candidate pre-screened and verified." },
-              { icon: Clock, t: "Faster hiring", d: "Shortlists that keep departments staffed." },
-              { icon: Globe2, t: "Pan-GCC reach", d: "Six markets, one accountable partner." },
-              { icon: Handshake, t: "Long-term partnership", d: "Support continues after joining." },
+              { icon: UserCheck, t: "Consultant-led care", d: "Senior specialists guide every treatment plan." },
+              { icon: Clock, t: "24x7 availability", d: "Emergency, ICU, pharmacy and diagnostics." },
+              { icon: Building2, t: "28+ branches", d: "One standard of care across India." },
+              { icon: Award, t: "Quality & safety", d: "Infection control and clinical audits." },
             ].map(({ icon: Icon, t, d }) => (
               <div key={t} className="surface-card p-6">
                 <Icon className="h-5 w-5 text-accent" />
@@ -379,24 +384,24 @@ export function About() {
         </Reveal>
 
         <Reveal delay={120}>
-          <div id="candidates" className="surface-card p-8 lg:p-10">
+          <div id="patient-info" className="surface-card p-8 lg:p-10">
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-medical">
-              For Candidates
+              For Patients &amp; Families
             </span>
             <h3 className="mt-3 font-display text-2xl font-extrabold text-primary">
-              Find jobs with leading Gulf healthcare employers
+              Everything you need before your hospital visit
             </h3>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              We represent doctors, nurses, allied healthcare professionals and healthcare leaders
-              seeking roles with leading hospitals and healthcare groups across the GCC.
+              From appointment booking to insurance approvals and discharge support, our patient
+              care team assists you at every step.
             </p>
             <ul className="mt-6 grid gap-3.5">
               {[
-                "Confidential career consultation",
-                "Roles with accredited hospitals and healthcare groups",
-                "Credential verification guidance",
-                "Visa and relocation coordination support",
-                "Interview preparation with your dedicated consultant",
+                "Online and phone appointment booking",
+                "Cashless treatment with leading insurers and TPAs",
+                "Ayushman Bharat and corporate tie-up assistance",
+                "Digital lab reports and discharge summaries",
+                "Attendant guidance, admission and billing help",
               ].map((i) => (
                 <li key={i} className="flex items-start gap-3 text-sm text-foreground">
                   <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
@@ -413,28 +418,28 @@ export function About() {
 
 const testimonials = [
   {
-    role: "Hospital Administrator",
-    org: "Multi-specialty Hospital, UAE",
+    role: "Cardiac patient's son",
+    org: "Bangalore, Karnataka",
     quote:
-      "MedTalent Global understood our staffing requirement immediately and delivered a verified shortlist within days. The process was structured and transparent throughout.",
+      "My father was admitted at midnight with chest pain. The emergency team acted within minutes and the cardiologist explained every step clearly.",
   },
   {
-    role: "Medical Director",
-    org: "Healthcare Group, Saudi Arabia",
+    role: "Knee replacement patient",
+    org: "Pune, Maharashtra",
     quote:
-      "Their consultants speak our clinical language. Candidate quality for consultant-level roles has been consistently strong.",
+      "The orthopaedic team and physiotherapists were excellent. I was walking with support the very next day after surgery.",
   },
   {
-    role: "HR Manager",
-    org: "Medical Centre, Qatar",
+    role: "New mother",
+    org: "Hyderabad, Telangana",
     quote:
-      "Nursing and allied healthcare hiring used to take months. With a dedicated consultant, our time-to-fill improved significantly.",
+      "The maternity ward and NICU staff were incredibly caring. The rooms were clean and the nursing support was constant.",
   },
   {
-    role: "Chief Executive Officer",
-    org: "Diagnostic Network, Oman",
+    role: "Health check-up patient",
+    org: "Delhi NCR",
     quote:
-      "A genuine long-term recruitment partner — they support us well beyond the joining date.",
+      "The full body health check was smooth and reports were available online the same evening with a doctor's explanation.",
   },
 ];
 
@@ -443,9 +448,9 @@ export function Testimonials() {
     <section className="bg-secondary/30 py-28 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          eyebrow="Testimonials"
-          title="Trusted by healthcare decision makers"
-          subtitle="Placeholder testimonials representing the organisations we partner with."
+          eyebrow="Patient Stories"
+          title="Care that families across India trust"
+          subtitle="Representative patient experiences from our hospital branches."
         />
         <div className="mt-16 grid gap-6 md:grid-cols-2">
           {testimonials.map((t, i) => (
@@ -467,3 +472,65 @@ export function Testimonials() {
     </section>
   );
 }
+
+const cities = [
+  "Bangalore",
+  "Mumbai",
+  "Delhi NCR",
+  "Hyderabad",
+  "Chennai",
+  "Pune",
+  "Kolkata",
+  "Ahmedabad",
+  "Jaipur",
+  "Lucknow",
+  "Chandigarh",
+  "Indore",
+  "Bhopal",
+  "Nagpur",
+  "Surat",
+  "Kochi",
+  "Coimbatore",
+  "Visakhapatnam",
+  "Patna",
+  "Bhubaneswar",
+  "Guwahati",
+  "Ludhiana",
+  "Kanpur",
+  "Varanasi",
+  "Mysuru",
+  "Mangaluru",
+  "Vijayawada",
+  "Thiruvananthapuram",
+];
+
+export function Branches() {
+  return (
+    <section id="branches" className="py-28 lg:py-32">
+      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+        <SectionHeading
+          eyebrow="Our Network"
+          title="28+ hospital branches across India"
+          subtitle="Headquartered in Bangalore, with multispeciality hospitals and clinics in major cities nationwide."
+        />
+        <div className="mt-16 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+          {cities.map((c, i) => (
+            <Reveal key={c} delay={(i % 4) * 60}>
+              <div className="flex items-center gap-2.5 rounded-xl border border-border bg-background px-4 py-3.5 transition-shadow hover:shadow-[var(--shadow-card)]">
+                <MapPin className="h-4 w-4 shrink-0 text-medical" />
+                <span className="text-sm font-medium text-primary">{c}</span>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+        <p className="mt-8 text-center text-sm text-muted-foreground">
+          <Users className="mr-2 inline h-4 w-4 text-accent" />
+          Corporate office: Bangalore, Karnataka · <UsersRound className="mx-1 inline h-4 w-4 text-accent" />
+          Patient helpline available 24x7
+        </p>
+      </div>
+    </section>
+  );
+}
+
+export const indianCities = cities;
