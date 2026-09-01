@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Stethoscope } from "lucide-react";
+import { Menu, X, HeartPulse } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -7,14 +7,13 @@ const links = [
   { label: "Home", href: "#home" },
   { label: "About Us", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Specialties", href: "#specialties" },
-  { label: "Industries", href: "#industries" },
-  { label: "Employers", href: "#employers" },
-  { label: "Find Jobs", href: "#candidates" },
+  { label: "Departments", href: "#specialties" },
+  { label: "Facilities", href: "#facilities" },
+  { label: "Patient Care", href: "#patients" },
+  { label: "Branches", href: "#branches" },
   { label: "Why Choose Us", href: "#why" },
   { label: "Contact", href: "#contact" },
 ];
-
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -39,10 +38,10 @@ export function Navbar() {
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
         <a href="#home" className="flex items-center gap-2.5">
           <span className="flex h-10 w-10 items-center justify-center rounded-xl gradient-navy text-primary-foreground">
-            <Stethoscope className="h-5 w-5" />
+            <HeartPulse className="h-5 w-5" />
           </span>
-          <span className="font-display text-lg font-extrabold tracking-tight text-primary">
-            MedTalent <span className="text-accent">Global</span>
+          <span className="font-display text-lg font-extrabold leading-tight tracking-tight text-primary">
+            Atlyshub <span className="text-accent">Hospital</span>
           </span>
         </a>
 
@@ -61,13 +60,12 @@ export function Navbar() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <Button variant="outlineNavy" size="default" className="hidden xl:inline-flex" asChild>
-            <a href="#candidates">Find Jobs</a>
+            <a href="tel:+918000000000">Emergency 24x7</a>
           </Button>
           <Button variant="hero" size="default" asChild>
-            <a href="#contact">Hire Talent</a>
+            <a href="#contact">Book Appointment</a>
           </Button>
         </div>
-
 
         <button
           aria-label="Toggle menu"
@@ -96,16 +94,15 @@ export function Navbar() {
           <div className="mt-4 grid gap-2">
             <Button variant="hero" size="xl" asChild>
               <a href="#contact" onClick={() => setOpen(false)}>
-                Hire Talent
+                Book Appointment
               </a>
             </Button>
             <Button variant="outlineNavy" size="xl" asChild>
-              <a href="#candidates" onClick={() => setOpen(false)}>
-                Find Jobs
+              <a href="tel:+918000000000" onClick={() => setOpen(false)}>
+                Emergency 24x7
               </a>
             </Button>
           </div>
-
         </div>
       )}
     </header>
