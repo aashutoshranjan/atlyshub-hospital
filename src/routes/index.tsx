@@ -11,12 +11,13 @@ import {
   Stats,
   About,
   Testimonials,
+  Branches,
 } from "@/components/site/Sections";
 import { Contact, Footer } from "@/components/site/ContactFooter";
 
-const title = "MedTalent Global | Healthcare Staffing & Recruitment GCC";
+const title = "Atlyshub Multispeciality Hospital | Bangalore & 28+ Branches in India";
 const description =
-  "Premium healthcare recruitment and executive search across UAE, Saudi Arabia, Qatar, Oman, Bahrain and Kuwait. Hire doctors, nurses and allied healthcare professionals.";
+  "Atlyshub Multispeciality Hospital offers advanced multispeciality care, 24x7 emergency and trauma services, modern diagnostics and expert doctors across Bangalore and 28+ branches in India.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
