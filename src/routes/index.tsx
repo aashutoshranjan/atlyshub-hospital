@@ -11,12 +11,13 @@ import {
   Stats,
   About,
   Testimonials,
+  Branches,
 } from "@/components/site/Sections";
 import { Contact, Footer } from "@/components/site/ContactFooter";
 
-const title = "MedTalent Global | Healthcare Staffing & Recruitment GCC";
+const title = "Atlyshub Multispeciality Hospital | Bangalore & 28+ Branches in India";
 const description =
-  "Premium healthcare recruitment and executive search across UAE, Saudi Arabia, Qatar, Oman, Bahrain and Kuwait. Hire doctors, nurses and allied healthcare professionals.";
+  "Atlyshub Multispeciality Hospital offers advanced multispeciality care, 24x7 emergency and trauma services, modern diagnostics and expert doctors across Bangalore and 28+ branches in India.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -26,29 +27,45 @@ export const Route = createFileRoute("/")({
       {
         name: "keywords",
         content:
-          "Healthcare Staffing UAE, Healthcare Recruitment Saudi Arabia, Healthcare Recruitment Qatar, Healthcare Recruitment Oman, Healthcare Staffing Bahrain, Healthcare Staffing Kuwait, Doctors Recruitment UAE, Nurse Recruitment UAE, Medical Staffing GCC, Healthcare Executive Search, Hospital Recruitment, Healthcare Recruitment Agency, Medical Recruitment Company, Healthcare Staffing Solutions",
+          "Multispeciality Hospital Bangalore, Best Hospital in Bangalore, Atlyshub Hospital, 24x7 Emergency Hospital India, Cardiology Hospital Bangalore, Orthopaedic Hospital India, Neurology Hospital Bangalore, Cancer Care Hospital India, Maternity Hospital Bangalore, Hospital near me",
       },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://atlyshub.in/" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://atlyshub.in/" }],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Organization",
-          name: "MedTalent Global",
+          "@type": "Hospital",
+          name: "Atlyshub Multispeciality Hospital",
           description,
-          areaServed: [
-            "United Arab Emirates",
-            "Saudi Arabia",
-            "Qatar",
-            "Oman",
-            "Bahrain",
-            "Kuwait",
+          url: "https://atlyshub.in/",
+          email: "support@atlyshub.in",
+          medicalSpecialty: [
+            "Cardiovascular",
+            "Orthopedic",
+            "Neurologic",
+            "Oncologic",
+            "Pediatric",
+            "Obstetric",
+            "Emergency",
           ],
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Bangalore",
+            addressRegion: "Karnataka",
+            addressCountry: "IN",
+          },
+          areaServed: "India",
+          availableService: {
+            "@type": "MedicalProcedure",
+            name: "24x7 Emergency and Trauma Care",
+          },
         }),
       },
     ],
@@ -70,6 +87,7 @@ function Index() {
         <Process />
         <Stats />
         <About />
+        <Branches />
         <Testimonials />
         <Contact />
       </main>
