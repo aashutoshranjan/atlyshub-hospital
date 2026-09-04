@@ -217,7 +217,7 @@ export function Footer() {
             <h3 className="mt-6 font-display text-sm font-bold uppercase tracking-wider">Contact</h3>
             <ul className="mt-4 grid gap-2.5 text-sm text-primary-foreground/70">
               <li>support@atlyshub.in</li>
-              <li>Head Office: Bangalore, Karnataka</li>
+              <li>23F, Curzon Rd, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka (560001)</li>
               <li>Emergency &amp; Trauma Care 24x7</li>
             </ul>
           </div>
