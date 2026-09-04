@@ -35,6 +35,12 @@ export function Navbar() {
           : "bg-transparent",
       )}
     >
+      <div className="gradient-navy text-center text-primary-foreground">
+        <p className="mx-auto max-w-7xl px-5 py-2 text-center text-[11px] font-medium tracking-wide sm:text-xs">
+          <HeartPulse className="mr-1.5 inline h-3.5 w-3.5 align-text-bottom" />
+          In tie-up with multiple hospitals across India · 28+ branches · 24x7 emergency care
+        </p>
+      </div>
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
         <a href="#home" className="flex items-center gap-2.5">
           <span className="flex h-10 w-10 items-center justify-center rounded-xl gradient-navy text-primary-foreground">
