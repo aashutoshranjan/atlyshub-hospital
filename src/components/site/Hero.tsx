@@ -1,4 +1,4 @@
-import { ArrowRight, CalendarCheck, HeartPulse, MapPin, Phone } from "lucide-react";
+import { ArrowRight, CalendarCheck, HeartPulse, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hospital-hero.jpg";
 
