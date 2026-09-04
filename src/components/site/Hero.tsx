@@ -10,7 +10,7 @@ export function Hero() {
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-5 lg:grid-cols-2 lg:gap-20 lg:px-8">
         <div className="animate-fade-up">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-background/80 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-medical">
-            <MapPin className="h-3.5 w-3.5" /> Headquartered in Bangalore · 28+ branches across India
+            <MapPin className="h-3.5 w-3.5" /> Headquartered in Bengaluru · 28+ branches · Tie-up with multiple hospitals across India
           </span>
           <h1 className="mt-7 font-display text-4xl font-extrabold leading-[1.08] text-primary sm:text-5xl lg:text-[3.4rem]">
             Advanced Multispeciality Care,{" "}

@@ -59,8 +59,8 @@ export function Contact() {
               <Mail className="h-5 w-5 text-accent" /> support@atlyshub.in
             </a>
             <div className="surface-card flex items-center gap-3 p-5 text-sm text-primary">
-              <MapPin className="h-5 w-5 text-accent" /> Head Office: Bangalore, Karnataka — 28+
-              branches across India
+              <MapPin className="h-5 w-5 text-accent" /> Head Office: 23F, Curzon Rd, Tasker Town,
+              Shivaji Nagar, Bengaluru, Karnataka (560001)
             </div>
             <div className="surface-card flex items-center gap-3 p-5 text-sm text-primary">
               <Clock className="h-5 w-5 text-accent" /> Emergency &amp; Trauma Care open 24x7
@@ -217,7 +217,7 @@ export function Footer() {
             <h3 className="mt-6 font-display text-sm font-bold uppercase tracking-wider">Contact</h3>
             <ul className="mt-4 grid gap-2.5 text-sm text-primary-foreground/70">
               <li>support@atlyshub.in</li>
-              <li>Head Office: Bangalore, Karnataka</li>
+              <li>23F, Curzon Rd, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka (560001)</li>
               <li>Emergency &amp; Trauma Care 24x7</li>
             </ul>
           </div>

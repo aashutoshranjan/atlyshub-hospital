@@ -355,8 +355,8 @@ export function About() {
           <SectionHeading
             eyebrow="About the Hospital"
             center={false}
-            title="A multispeciality hospital network headquartered in Bangalore"
-            subtitle="Atlyshub Multispeciality Hospital is headquartered in Bangalore, Karnataka, and operates more than 28 hospital branches across India, delivering emergency, surgical, critical and preventive care."
+            title="A multispeciality hospital network headquartered in Bengaluru"
+            subtitle="Atlyshub Multispeciality Hospital is headquartered at 23F, Curzon Rd, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka (560001), and operates more than 28 hospital branches across India, delivering emergency, surgical, critical and preventive care."
           />
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
             Our consultants work across cardiology, neurosciences, orthopaedics, oncology, mother
@@ -511,7 +511,7 @@ export function Branches() {
         <SectionHeading
           eyebrow="Our Network"
           title="28+ hospital branches across India"
-          subtitle="Headquartered in Bangalore, with multispeciality hospitals and clinics in major cities nationwide."
+          subtitle="Headquartered in Bengaluru, with multispeciality hospitals and clinics in major cities nationwide."
         />
         <div className="mt-16 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           {cities.map((c, i) => (
@@ -525,7 +525,8 @@ export function Branches() {
         </div>
         <p className="mt-8 text-center text-sm text-muted-foreground">
           <Users className="mr-2 inline h-4 w-4 text-accent" />
-          Corporate office: Bangalore, Karnataka · <UsersRound className="mx-1 inline h-4 w-4 text-accent" />
+          Head Office: 23F, Curzon Rd, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka (560001) ·{" "}
+          <UsersRound className="mx-1 inline h-4 w-4 text-accent" />
           Patient helpline available 24x7
         </p>
       </div>
