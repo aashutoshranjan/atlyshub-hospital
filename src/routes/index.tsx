@@ -57,8 +57,10 @@ export const Route = createFileRoute("/")({
           ],
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Bangalore",
+            streetAddress: "23F, Curzon Rd, Tasker Town, Shivaji Nagar",
+            addressLocality: "Bengaluru",
             addressRegion: "Karnataka",
+            postalCode: "560001",
             addressCountry: "IN",
           },
           areaServed: "India",
