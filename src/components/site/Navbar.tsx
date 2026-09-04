@@ -65,9 +65,6 @@ export function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <Button variant="outlineNavy" size="default" className="hidden xl:inline-flex" asChild>
-            <a href="tel:+918000000000">Emergency 24x7</a>
-          </Button>
           <Button variant="hero" size="default" asChild>
             <a href="#contact">Book Appointment</a>
           </Button>
@@ -101,11 +98,6 @@ export function Navbar() {
             <Button variant="hero" size="xl" asChild>
               <a href="#contact" onClick={() => setOpen(false)}>
                 Book Appointment
-              </a>
-            </Button>
-            <Button variant="outlineNavy" size="xl" asChild>
-              <a href="tel:+918000000000" onClick={() => setOpen(false)}>
-                Emergency 24x7
               </a>
             </Button>
           </div>

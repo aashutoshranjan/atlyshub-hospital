@@ -28,11 +28,6 @@ export function Hero() {
                 Book an Appointment <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
-            <Button variant="outlineNavy" size="xl" asChild>
-              <a href="tel:+918000000000">
-                <Phone className="h-4 w-4" /> Emergency Helpline
-              </a>
-            </Button>
           </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-muted-foreground">
