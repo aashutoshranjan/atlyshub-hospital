@@ -1,4 +1,4 @@
-import { ArrowRight, CalendarCheck, HeartPulse, MapPin, Phone } from "lucide-react";
+import { ArrowRight, CalendarCheck, HeartPulse, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hospital-hero.jpg";
 
@@ -26,11 +26,6 @@ export function Hero() {
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">
                 Book an Appointment <ArrowRight className="h-4 w-4" />
-              </a>
-            </Button>
-            <Button variant="outlineNavy" size="xl" asChild>
-              <a href="tel:+918000000000">
-                <Phone className="h-4 w-4" /> Emergency Helpline
               </a>
             </Button>
           </div>
